@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun create:*)",
+      "Bash(bun install:*)",
+      "Bash(bun add:*)",
+      "Bash(bun run:*)",
+      "Bash(lsof:*)",
+      "Read(//var/folders/cj/vgk2yz_110z5nx4mqvhfz6yh0000gn/T/TemporaryItems/NSIRD_screencaptureui_UUaIpj/**)",
+      "Read(//var/folders/cj/vgk2yz_110z5nx4mqvhfz6yh0000gn/T/TemporaryItems/NSIRD_screencaptureui_xNLMTA/**)",
+      "Read(//var/folders/cj/vgk2yz_110z5nx4mqvhfz6yh0000gn/T/TemporaryItems/NSIRD_screencaptureui_5qOhAL/**)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(bun remove:*)",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click",
+      "Bash(bunx tailwindcss init:*)",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_console_messages",
+      "Read(//var/folders/cj/vgk2yz_110z5nx4mqvhfz6yh0000gn/T/TemporaryItems/NSIRD_screencaptureui_TcoATj/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
