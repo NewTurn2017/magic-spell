@@ -1,0 +1,43 @@
+# Magic Hands Robots.txt
+# https://magichands.art/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://magichands.art/sitemap.xml
+
+# Crawl-delay for responsible crawling
+Crawl-delay: 1
+
+# Disallow access to private or development paths (if any exist in the future)
+# Disallow: /api/private/
+# Disallow: /admin/
+# Disallow: /.git/
+# Disallow: /node_modules/
+
+# Allow search engines to index all content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Block bad bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <defs>
+    <linearGradient id="bgGradient192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="handGlow192">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="192" height="192" rx="24" fill="url(#bgGradient192)"/>
+  
+  <!-- Glow effect -->
+  <circle cx="96" cy="96" r="70" fill="url(#handGlow192)" opacity="0.3"/>
+  
+  <!-- Hand silhouette -->
+  <g transform="translate(96, 96)">
+    <!-- Palm -->
+    <ellipse cx="0" cy="8" rx="35" ry="42" fill="white"/>
+    
+    <!-- Fingers -->
+    <rect x="-28" y="-35" width="11" height="35" rx="5.5" fill="white"/>
+    <rect x="-14" y="-42" width="11" height="42" rx="5.5" fill="white"/>
+    <rect x="0" y="-45" width="11" height="45" rx="5.5" fill="white"/>
+    <rect x="14" y="-39" width="11" height="39" rx="5.5" fill="white"/>
+    
+    <!-- Thumb -->
+    <ellipse cx="-31" cy="0" rx="8" ry="17" fill="white" transform="rotate(-30 -31 0)"/>
+    
+    <!-- Magic stars -->
+    <g>
+      <path d="M -20 -50 L -18 -46 L -14 -48 L -18 -46 L -16 -42 L -18 -46 L -22 -44 L -18 -46 Z" fill="#ffd700" opacity="0.9">
+        <animateTransform attributeName="transform" type="rotate" from="0 -18 -46" to="360 -18 -46" dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 8 -58 L 10 -54 L 14 -56 L 10 -54 L 12 -50 L 10 -54 L 6 -52 L 10 -54 Z" fill="#ffd700" opacity="0.8">
+        <animateTransform attributeName="transform" type="rotate" from="0 10 -54" to="360 10 -54" dur="5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 28 -48 L 30 -44 L 34 -46 L 30 -44 L 32 -40 L 30 -44 L 26 -42 L 30 -44 Z" fill="#ffd700" opacity="0.7">
+        <animateTransform attributeName="transform" type="rotate" from="0 30 -44" to="360 30 -44" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+</svg>

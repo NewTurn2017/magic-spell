@@ -17,7 +17,8 @@
       "Bash(bunx tailwindcss init:*)",
       "mcp__playwright__browser_evaluate",
       "mcp__playwright__browser_console_messages",
-      "Read(//var/folders/cj/vgk2yz_110z5nx4mqvhfz6yh0000gn/T/TemporaryItems/NSIRD_screencaptureui_TcoATj/**)"
+      "Read(//var/folders/cj/vgk2yz_110z5nx4mqvhfz6yh0000gn/T/TemporaryItems/NSIRD_screencaptureui_TcoATj/**)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

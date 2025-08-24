@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bgGradient512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9f7aea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="handGlow512">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="url(#bgGradient512)"/>
+  
+  <!-- Glow effect -->
+  <circle cx="256" cy="256" r="180" fill="url(#handGlow512)" opacity="0.25"/>
+  
+  <!-- Hand with detail -->
+  <g transform="translate(256, 256)">
+    <!-- Shadow -->
+    <ellipse cx="5" cy="25" rx="90" ry="108" fill="black" opacity="0.2" filter="url(#softGlow)"/>
+    
+    <!-- Palm -->
+    <ellipse cx="0" cy="20" rx="90" ry="108" fill="white"/>
+    
+    <!-- Fingers with joints -->
+    <g>
+      <!-- Pinky -->
+      <rect x="-72" y="-90" width="28" height="90" rx="14" fill="white"/>
+      <circle cx="-58" cy="-45" r="16" fill="white"/>
+      
+      <!-- Ring finger -->
+      <rect x="-36" y="-108" width="28" height="108" rx="14" fill="white"/>
+      <circle cx="-22" cy="-54" r="16" fill="white"/>
+      
+      <!-- Middle finger -->
+      <rect x="0" y="-116" width="28" height="116" rx="14" fill="white"/>
+      <circle cx="14" cy="-58" r="16" fill="white"/>
+      
+      <!-- Index finger -->
+      <rect x="36" y="-100" width="28" height="100" rx="14" fill="white"/>
+      <circle cx="50" cy="-50" r="16" fill="white"/>
+    </g>
+    
+    <!-- Thumb -->
+    <g transform="rotate(-35 -80 0)">
+      <ellipse cx="-80" cy="0" rx="22" ry="44" fill="white"/>
+      <circle cx="-80" cy="-15" r="20" fill="white"/>
+    </g>
+    
+    <!-- Palm lines -->
+    <path d="M -50 20 Q 0 10 50 20" stroke="#e0e0e0" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M -30 50 Q 0 45 30 50" stroke="#e0e0e0" stroke-width="2" fill="none" opacity="0.5"/>
+    
+    <!-- Magic elements -->
+    <g>
+      <!-- Large star -->
+      <g transform="translate(-50, -130)">
+        <path d="M 0 -20 L 6 -6 L 20 0 L 6 6 L 0 20 L -6 6 L -20 0 L -6 -6 Z" fill="#ffd700">
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="6s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      
+      <!-- Medium star -->
+      <g transform="translate(20, -150)">
+        <path d="M 0 -15 L 4.5 -4.5 L 15 0 L 4.5 4.5 L 0 15 L -4.5 4.5 L -15 0 L -4.5 -4.5 Z" fill="#ff69b4">
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      
+      <!-- Small star -->
+      <g transform="translate(70, -120)">
+        <path d="M 0 -10 L 3 -3 L 10 0 L 3 3 L 0 10 L -3 3 L -10 0 L -3 -3 Z" fill="#87ceeb">
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      
+      <!-- Sparkle particles -->
+      <circle cx="-30" cy="-140" r="3" fill="#ffffff" opacity="0.8">
+        <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="45" cy="-135" r="2" fill="#ffffff" opacity="0.7">
+        <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0.3;0.7" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>
