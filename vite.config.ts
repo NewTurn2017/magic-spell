@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    https: false, // Set to true if you need HTTPS for camera access
     host: true, // Listen on all addresses
     port: 5173,
   }
